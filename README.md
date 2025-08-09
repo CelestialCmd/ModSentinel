@@ -72,5 +72,3 @@ git commit -m "Force-add small demo files"
 ## License
 
 MIT © 2025 Liam Troper
-
----
