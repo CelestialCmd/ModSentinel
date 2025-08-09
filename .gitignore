@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.env/
+.venv/
+venv/
+pip-wheel-metadata/
+
+# OS/Editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Tool output
+decompiled/
+**/decompiled/
+*.log
+
+# Binaries & jars
+*.jar
+*.zip
+*.exe
+*.dll
+
+# Local tools (don’t commit platform-specific binaries)
+jadx/
+tools/

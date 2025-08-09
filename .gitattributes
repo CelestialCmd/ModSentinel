@@ -1,0 +1,14 @@
+# Default: commit LF (Unix) for text files
+* text=auto eol=lf
+
+# Windows-only scripts that must be CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Always LF for code & configs
+*.py  text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.java text eol=lf
+*.md  text eol=lf
+*.sh  text eol=lf

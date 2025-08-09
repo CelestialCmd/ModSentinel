@@ -1,0 +1,20 @@
+# Semgrep rule for detecting os usage in Java code
+rules:
+  - id: java-os-usage
+    patterns:
+    - pattern-either:
+      - pattern: |
+          os.exec(...)
+      - pattern: |
+          os.write(...)
+      - pattern: |
+          os.flush(...)
+    message: "Usage of os detected. Consider using safer alternatives."
+    severity: WARNING
+    languages:
+      - java
+    metadata:
+      category: security
+      technology: java
+      cwe: "CWE-78"
+      description: "Detects usage of os.exec() in Java code."
