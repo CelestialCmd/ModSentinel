@@ -17,8 +17,7 @@ Scan Java-based mod `.jar` files (e.g., Minecraft/Fabric/Forge) by **decompiling
   - Put `jadx` on your PATH, or set `JADX_BIN` to the full path (see below)
 - **Semgrep/Opengrep** (or run in WSL/Linux/macOS). On Windows, you can:
   - Use WSL: `sudo apt install python3-pip && pipx install semgrep`
-  - Or run Semgrep inside Docker (see notes below)
-
+  - Or install Opengrep as .exe to /bin folder in repo root
 ## Install (Windows example)
 ```bat
 python -m venv .venv
