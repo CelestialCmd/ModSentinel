@@ -15,6 +15,8 @@ Decompile & scan Java mod **.jar** files (Minecraft/Fabric/Forge). Uses **JADX**
 # (optional venv)
 python -m venv .venv && . .venv/bin/activate   # Windows: .\.venv\Scripts\activate
 
+# fast run with all rules
+python scanner.py path/to/mod.jar 
 # run
 python scanner.py path/to/mod.jar --rules rules/default-java-rules.yml
 # if JADX not on PATH:
@@ -39,29 +41,6 @@ modsentinel/
   mod/   (optional sample jars)
   bin/   (optional local tools, e.g., jadx/)
 ```
-
-## Including `mod/` and `bin/` in Git (pick one)
-
-**A) Recommended – Git LFS**
-
-```bash
-git lfs install
-git lfs track "mod/*.jar" "bin/jadx/**"
-git add .gitattributes mod/*.jar bin/jadx/**
-git commit -m "Add sample mod + tools via LFS"
-```
-
-**B) Small demo only – force add (not ideal)**
-
-```bash
-git add -f mod/demo.jar bin/jadx/bin/jadx.bat
-git commit -m "Force-add small demo files"
-```
-
-**C) Don’t commit binaries**
-
-* Add `bin/README.md` with download links
-* Attach tools/jars to GitHub Releases
 
 ## Troubleshooting
 
