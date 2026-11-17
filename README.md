@@ -50,4 +50,4 @@ modsentinel/
 
 ## License
 
-MIT © 2025 Liam Troper
+MIT © 2026
